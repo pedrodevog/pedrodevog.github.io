@@ -57,11 +57,34 @@ ul.task-list input[type="checkbox"] {
 
 .profile {
   width: 100%;
+  transform: translateY(-40px) scale(0.7);
+  transform-origin: top right;
 
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: monospace;
+
+    .profile-icons {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-top: 0.25rem;
+
+      a,
+      span {
+        color: inherit;
+        font-size: 2rem;
+        line-height: 1;
+      }
+    }
+
+    .collab-note {
+      display: block;
+      text-align: center;
+      margin-top: 0.35rem;
+      font-size: 0.95rem;
+    }
 
     p {
       display: inline-block;
@@ -76,6 +99,13 @@ ul.task-list input[type="checkbox"] {
 
 .profile.float-left {
   margin-right: 1rem;
+  transform-origin: top left;
+}
+
+.subtitle {
+  display: block;
+  font-family: monospace;
+  font-size: 0.8rem;
 }
 
 @media (min-width: 576px) {

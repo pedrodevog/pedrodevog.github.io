@@ -53,7 +53,7 @@ external_services:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+search_enabled: false
 socials_in_search: true
 posts_in_search: true
 bib_search: true
@@ -198,6 +198,12 @@ exclude:
   - package.json
   - package-lock.json
   - _pages/about_einstein.md
+  - _pages/blog.md
+  - _pages/books.md
+  - _pages/dropdown.md
+  - _pages/news.md
+  - _pages/profiles.md
+  - _pages/repositories.md
   - purgecss.config.js
   - README.md
   - readme_preview/
