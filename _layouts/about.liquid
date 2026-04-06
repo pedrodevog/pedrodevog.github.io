@@ -42,11 +42,9 @@ layout: default
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      {% capture news_content %}{% include news.liquid limit=true %}{% endcapture %}
+      {% capture news_content %}{% include news.liquid limit=true disable_links=true %}{% endcapture %}
       {% if news_content | strip != '' %}
-        <h2>
-          <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
-        </h2>
+        <h2>News</h2>
         {{ news_content }}
       {% endif %}
     {% endif %}

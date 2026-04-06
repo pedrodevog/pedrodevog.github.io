@@ -8,6 +8,7 @@ body {
   padding-bottom: 70px;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
+  position: relative;
 
   h1,
   h2,
@@ -17,6 +18,35 @@ body {
   h6 {
     scroll-margin-top: 66px;
   }
+}
+
+#particles-js {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background-color: var(--global-bg-color);
+  pointer-events: none;
+}
+
+#particles-js canvas {
+  display: block;
+  position: absolute;
+  inset: 0;
+}
+
+header,
+.container,
+footer {
+  position: relative;
+}
+
+header {
+  z-index: 1030;
+}
+
+.container,
+footer {
+  z-index: 1;
 }
 
 body.fixed-top-nav {
