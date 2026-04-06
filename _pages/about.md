@@ -17,9 +17,9 @@ profile:
     </div>
     <p class="collab-note">Open to collaborations</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 selected_projects: true # includes a list of projects marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
@@ -27,7 +27,7 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
@@ -39,10 +39,3 @@ My academic path includes a Bachelor in Engineering Science (magna cum laude, 78
 During my studies, I completed an exchange semester at ETH Zurich and contributed to many projects, which you can find on my [Projects](/projects/) page.
 
 I am particularly motivated by **research that unifies strong mathematical foundations** with practical impact in biomedical and broader signal processing applications.
-
-##### Selected awards
-
-- Golden Chalk Award (best teaching assistant, student-voted)
-- Best Technical Solution Award (Engineering Case Competition)
-- Runner-Up Best Technical Excellence (Data 4 Good Hackathon)
-- P&O3 Laureate

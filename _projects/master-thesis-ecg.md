@@ -13,6 +13,8 @@ selected: true
 
 This master's thesis addressed a core methodological gap in physiological signal generation: the lack of a standardized, reproducible way to evaluate synthetic ECG outputs from generative deep learning models.
 
+The code repository for this project is available on [GitHub](https://github.com/pedrodevog/SynthECG).
+
 ## Thesis
 
 - **Title:** A Systematic Evaluation Framework of Generative Deep Learning for 10-second 12-lead Synthetic ECG Signals
@@ -20,6 +22,7 @@ This master's thesis addressed a core methodological gap in physiological signal
 - **Promotor:** Prof. Maarten De Vos
 - **Supervisor** Lore Van Santvliet
 - **Grade:** 17/20
+- **Full text:** [KU Leuven repository](https://repository.teneo.libis.be/delivery/DeliveryManagerServlet?dps_pid=IE48018000)
 
 ## Contribution
 

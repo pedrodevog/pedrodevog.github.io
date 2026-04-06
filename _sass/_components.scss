@@ -56,14 +56,14 @@ ul.task-list input[type="checkbox"] {
 // Profile
 
 .profile {
-  width: 100%;
-  transform: translateY(-40px) scale(0.7);
-  transform-origin: top right;
+  width: 75%;
+  max-width: 280px;
 
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: monospace;
+    font-size: 0.75rem;
 
     .profile-icons {
       display: flex;
@@ -78,7 +78,7 @@ ul.task-list input[type="checkbox"] {
       }
 
       a i {
-        font-size: 2rem;
+        font-size: 1.35rem;
         color: var(--global-text-color);
         transition: color 0.2s ease-in-out;
       }
@@ -92,7 +92,7 @@ ul.task-list input[type="checkbox"] {
       display: block;
       text-align: center;
       margin-top: 0.35rem;
-      font-size: 1.1rem;
+      font-size: 0.75rem;
     }
 
     p {
@@ -103,12 +103,11 @@ ul.task-list input[type="checkbox"] {
 }
 
 .profile.float-right {
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .profile.float-left {
   margin-right: 1rem;
-  transform-origin: top left;
 }
 
 .subtitle {
@@ -119,7 +118,8 @@ ul.task-list input[type="checkbox"] {
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 22%;
+    max-width: none;
 
     .address {
       p {
@@ -298,6 +298,9 @@ ul.task-list input[type="checkbox"] {
 
 .social {
   text-align: center;
+  margin-top: 2rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--global-divider-color);
 
   .contact-icons {
     font-size: 4rem;

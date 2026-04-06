@@ -42,34 +42,46 @@ layout: default
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
-      </h2>
-      {% include news.liquid limit=true %}
+      {% capture news_content %}{% include news.liquid limit=true %}{% endcapture %}
+      {% if news_content | strip != '' %}
+        <h2>
+          <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
+        </h2>
+        {{ news_content }}
+      {% endif %}
     {% endif %}
 
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
+      {% capture latest_posts_content %}{% include latest_posts.liquid %}{% endcapture %}
+      {% if latest_posts_content | strip != '' %}
+        <h2>
+          <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest posts</a>
+        </h2>
+        {{ latest_posts_content }}
+      {% endif %}
     {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
+      {% capture selected_papers_content %}{% include selected_papers.liquid %}{% endcapture %}
+      {% if selected_papers_content | strip != '' %}
+        <h2>
+          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected publications</a>
+        </h2>
+        {{ selected_papers_content }}
+      {% endif %}
     {% endif %}
 
     <!-- Selected projects -->
     {% if page.selected_projects %}
-      <h2>
-        <a href="{{ '/projects/' | relative_url }}" style="color: inherit">Selected projects</a>
-      </h2>
-      {% include selected_projects.liquid %}
+      {% capture selected_projects_content %}{% include selected_projects.liquid %}{% endcapture %}
+      {% if selected_projects_content | strip != '' %}
+        <h2>
+          <a href="{{ '/projects/' | relative_url }}" style="color: inherit">Selected projects</a>
+        </h2>
+        {{ selected_projects_content }}
+      {% endif %}
     {% endif %}
 
     <!-- Social -->
@@ -77,6 +89,10 @@ layout: default
       <div class="social">
         <div class="contact-icons">{% social_links %}</div>
 
+        <div class="contact-note">{{ site.contact_note }}</div>
+      </div>
+    {% elsif site.contact_note and site.contact_note != '' %}
+      <div class="social">
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
