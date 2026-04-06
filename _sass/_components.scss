@@ -74,7 +74,6 @@ ul.task-list input[type="checkbox"] {
       a,
       span {
         color: inherit;
-        font-size: 2rem;
         line-height: 1;
       }
     }
@@ -176,6 +175,51 @@ ul.task-list input[type="checkbox"] {
     line-height: 1.2;
   }
 
+  .project-title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.6rem;
+    margin-bottom: 0.35rem;
+
+    .card-title {
+      margin-bottom: 0;
+    }
+
+    .github-icon {
+      flex-shrink: 0;
+      line-height: 1;
+      position: relative;
+      z-index: 2;
+
+      a {
+        position: relative;
+        z-index: 2;
+        color: var(--global-text-color);
+      }
+
+      .gh-icon,
+      .gh-icon::before {
+        font-size: var(--project-github-icon-size) !important;
+      }
+      --project-github-icon-size: 1.35rem;
+
+      .gh-icon {
+        display: inline-block;
+        color: var(--global-text-color) !important;
+        line-height: 1;
+        transition: color 0.2s ease-in-out;
+      }
+
+      a:hover .gh-icon,
+      a:hover .gh-icon::before,
+      .github-icon:hover .gh-icon,
+      .github-icon:hover .gh-icon::before {
+        color: var(--global-theme-color) !important;
+      }
+    }
+  }
+
   .project-label {
     display: inline-block;
     margin-bottom: 0.5rem;
@@ -244,15 +288,15 @@ ul.task-list input[type="checkbox"] {
         }
       }
 
-      i::before {
+      i {
         color: var(--global-text-color);
-        transition-property: all 0.2s ease-in-out;
+        transition: color 0.2s ease-in-out;
       }
 
       &:hover {
         text-decoration: none;
 
-        i::before {
+        i {
           color: var(--global-theme-color);
         }
       }

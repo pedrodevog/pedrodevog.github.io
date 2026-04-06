@@ -1,8 +1,9 @@
 ---
 layout: page
 label: Master's Thesis
-title: Synthetic 12-Lead ECG Generation
+title: "SynthECG: Synthetic 12-Lead ECG Generation"
 description: A systematic evaluation framework for generative deep learning on synthetic ECG signals.
+github: https://github.com/pedrodevog/SynthECG
 importance: 1
 category: research
 selected: true

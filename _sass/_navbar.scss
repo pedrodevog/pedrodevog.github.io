@@ -101,13 +101,13 @@
         }
       }
 
-      i::before {
+      i {
         color: var(--global-text-color);
-        transition-property: all 0.2s ease-in-out;
+        transition: color 0.2s ease-in-out;
       }
 
       &:hover {
-        i::before {
+        i {
           color: var(--global-theme-color);
         }
       }
