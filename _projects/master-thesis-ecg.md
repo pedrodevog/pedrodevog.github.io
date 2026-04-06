@@ -1,9 +1,11 @@
 ---
 layout: page
-title: Master's Thesis - Synthetic 12-Lead ECG Generation
+label: Master's Thesis
+title: Synthetic 12-Lead ECG Generation
 description: A systematic evaluation framework for generative deep learning on synthetic ECG signals.
 importance: 1
 category: research
+selected: true
 ---
 
 ## Overview

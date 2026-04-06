@@ -1,14 +1,16 @@
 ---
 layout: page
-title: MIRC Research Internships - Lesioned Brain MRI Parcellation
-description: Two research internships on automated segmentation pipelines for lesioned brain MRI.
+label: Research Internship
+title: Lesioned Brain MRI Parcellation
+description: Research internship on automated segmentation pipelines for lesioned brain MRI.
 importance: 2
 category: research
+selected: true
 ---
 
 ## Overview
 
-During two six-week research internships (summer 2023 and summer 2024) at the Medical Imaging Research Center (MIRC), KU Leuven, I worked on automated parcellation of lesioned brain images.
+During a six-week research internship (summer 2024) at the Medical Imaging Research Center (MIRC), KU Leuven, I worked on automated parcellation of lesioned brain images.
 
 ## Context
 
