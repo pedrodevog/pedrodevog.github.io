@@ -76,13 +76,23 @@ ul.task-list input[type="checkbox"] {
         color: inherit;
         line-height: 1;
       }
+
+      a i {
+        font-size: 2rem;
+        color: var(--global-text-color);
+        transition: color 0.2s ease-in-out;
+      }
+
+      a:hover i {
+        color: var(--global-theme-color);
+      }
     }
 
     .collab-note {
       display: block;
       text-align: center;
       margin-top: 0.35rem;
-      font-size: 0.95rem;
+      font-size: 1.1rem;
     }
 
     p {
@@ -175,6 +185,17 @@ ul.task-list input[type="checkbox"] {
     line-height: 1.2;
   }
 
+  .project-title-link {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+
   .project-title-row {
     display: flex;
     align-items: flex-start;
@@ -236,6 +257,17 @@ ul.task-list input[type="checkbox"] {
 
   .col {
     padding-bottom: 1rem;
+  }
+
+  @media (max-width: 767.98px) {
+    .col,
+    .col-12 {
+      padding-bottom: 0.4rem;
+    }
+
+    .col.mb-4 {
+      margin-bottom: 0.75rem !important;
+    }
   }
 
   .grid-sizer,

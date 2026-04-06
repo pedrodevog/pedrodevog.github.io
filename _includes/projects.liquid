@@ -2,11 +2,12 @@
   {% assign project_heading = project.title %}
   {% assign project_label = project.label | default: '' %}
   {% assign project_github_url = project.github | default: '' %}
+  {% assign project_url = project.redirect | default: project.url | relative_url %}
   {% if project_github_url == '' and project.redirect and project.redirect contains 'github.com' %}
     {% assign project_github_url = project.redirect %}
   {% endif %}
 
-  <div class="card h-100 hoverable position-relative">
+  <div class="card h-100 hoverable">
       {% if project.img %}
         {%
           include figure.liquid
@@ -19,7 +20,9 @@
       {% endif %}
       <div class="card-body">
         <div class="project-title-row">
-          <h4 class="card-title">{{ project_heading }}</h4>
+          <h4 class="card-title">
+            <a class="project-title-link" href="{{ project_url }}" aria-label="Open project {{ project_heading }}">{{ project_heading }}</a>
+          </h4>
           {% if project_github_url != '' %}
             <span class="github-icon" data-toggle="tooltip" title="Code Repository">
               <a href="{{ project_github_url }}" aria-label="GitHub repository">
@@ -33,6 +36,5 @@
         {% endif %}
         <p class="card-text">{{ project.description }}</p>
       </div>
-      <a class="stretched-link" href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}" aria-label="Open project {{ project_heading }}"></a>
     </div>
 </div>

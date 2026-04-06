@@ -1,10 +1,11 @@
 <div class="col mb-4">
   {% assign project_github_url = project.github | default: '' %}
+  {% assign project_url = project.redirect | default: project.url | relative_url %}
   {% if project_github_url == '' and project.redirect and project.redirect contains 'github.com' %}
     {% assign project_github_url = project.redirect %}
   {% endif %}
 
-  <div class="card h-100 hoverable position-relative">
+  <div class="card h-100 hoverable">
       <div class="row no-gutters">
         {% if project.img %}
           <div class="col-md-6">
@@ -14,7 +15,9 @@
         <div class="{% if project.img %}col-md-6{% else %}col-md-12{% endif %}">
           <div class="card-body">
             <div class="project-title-row">
-              <h3 class="card-title">{{ project.title }}</h3>
+              <h3 class="card-title">
+                <a class="project-title-link" href="{{ project_url }}" aria-label="Open project {{ project.title }}">{{ project.title }}</a>
+              </h3>
               {% if project_github_url != '' %}
                 <span class="github-icon" data-toggle="tooltip" title="Code Repository">
                   <a href="{{ project_github_url }}" aria-label="GitHub repository">
@@ -27,6 +30,5 @@
           </div>
         </div>
       </div>
-      <a class="stretched-link" href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}" aria-label="Open project {{ project.title }}"></a>
     </div>
 </div>
