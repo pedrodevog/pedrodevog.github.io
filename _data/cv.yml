@@ -1,189 +1,143 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Pedro Devogelaere
+  label: PhD Researcher
+  email: pedro.devogelaere@kuleuven.be
+  location: Leuven, Belgium
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
-
-  social_networks:
-    - network: X
-      username: AlbertEinstein
-    - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+  summary: Driven researcher with a deep interest in computational problems and (biomedical) signal processing, combining strong academic performance with hands-on research and student leadership.
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+      - institution: KU Leuven
+        location: Leuven, Belgium
+        area: Biomedical Engineering
+        studyType: Master of Biomedical Engineering
+        start_date: 2023
+        end_date: 2025
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Result: summa cum laude (86.14%)."
+          - "Exchange semester at ETH Zurich, result: summa cum laude (95%)."
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: KU Leuven
+        location: Leuven, Belgium
+        area: Biomedical Technology and Electrotechnical Engineering
+        studyType: Bachelor of Engineering Sciences
+        start_date: 2020
+        end_date: 2023
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Result: magna cum laude (78.69%)."
+          - Honours Program project on deep-learning-based classification and prediction of breathing patterns (Prof. dr. ir. Sofie Pollin).
+
+      - institution: Sint-Albertuscollege Haasrode
+        location: Heverlee, Belgium
+        area: Maths-Latin
+        studyType: Secondary Education
+        start_date: 2014
+        end_date: 2020
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: KU Leuven - STADIUS
+        position: PhD Researcher
+        location: Leuven, Belgium
+        start_date: 2025-09-16
+        end_date: 
+        url: https://research.kuleuven.be/portal/en/project/3E250767
+        summary: Efficient Deep Learning using Autonomous Linear State Space Models.
         highlights:
-          - Relativity
-          - Description 2.
+          - "Promotor: Prof. dr. ir. Alexander Bertrand (STADIUS, KU Leuven)."
+          - "Copromotor: Reto Wildhaber (FHNW University of Applied Sciences and Arts Northwestern Switzerland)."
+          - Focuses on improving deep learning efficiency for high-dimensional or high-throughput data by using autonomous linear state space models and efficient recursive updates for resource-constrained and real-time applications.
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: KU Leuven - MIRC
+        position: Student Researcher
+        location: Leuven, Belgium
+        start_date: 2024-06
+        end_date: 2024-09
+        summary: Mentored by Prof. dr. ir. Frederik Maes and dr. Ahmed Radwan.
         highlights:
-          - Description 1.
-          - Description 2.
+          - Developed a state-of-the-art image parcellation tool for multimodal lesioned brain MR images.
+          - Work contributed to an upcoming paper.
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: KU Leuven - MIRC
+        position: Student Researcher
+        location: Leuven, Belgium
+        start_date: 2023-06
+        end_date: 2023-09
+        summary: Mentored by Prof. dr. ir. Frederik Maes and Prof. dr. Vincent Vandecaveye.
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - Developed a state-of-the-art image segmentation tool on DW-MR images.
+          - Integrated the solution in the MIM system at UZ Leuven.
+
+      - company: KU Leuven - ESAT
+        position: Teaching Assistant, Information Processing and Transmission
+        location: Leuven, Belgium
+        start_date: 2022
+        end_date: 2024
+        summary: Mentored by Prof. dr. ir. Sofie Pollin.
+        highlights:
+          - Taught exercise sessions.
+          - Updated slides and course layout.
+          - Wrote and adapted course materials to student level.
+
+      - company: Slaagsleutels
+        position: Tutor
+        location: Leuven, Belgium
+        start_date: 2021
+        end_date: 2022
+        highlights:
+          - Tutored students in courses such as Analysis.
 
     Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+      - title: 1st Place (Technical), Engineering Case Competition
+        date: 2024
+        awarder: VTK and Industria Leuven
+        summary: Concept to use waste heat from AI data centers in the beer-brewing process of an AB InBev plant.
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+      - title: 2nd Place (Technical), Data4Good Festival
+        date: 2024
+        awarder: Hertie School Berlin
+        summary: AI-driven tool to help the International Organization for Migration quickly gather and summarize multilingual news.
 
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+      - title: Laureate P&O3 - Sunhouse
+        date: 2022
+        awarder: Alumni Association, Engineering Sciences
+        summary: Developed an algorithm minimizing energy consumption in a green-energy-driven household.
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+    Leadership and Activities:
+      - company: Biomedix - VTK Leuven
+        position: Founder
+        location: Leuven, Belgium
+        start_date: 2024
+        end_date: 2025
+        highlights:
+          - Coordinated the team to design and run events for biomedical engineering students.
+          - Built and maintained sponsor partnerships to increase event quality and reach.
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+      - company: VTK Leuven
+        position: Team Member IT
+        location: Leuven, Belgium
+        start_date: 2022
+        end_date: 2024
+        highlights:
+          - Managed and maintained digital services including wiki, online ticketing, and stock systems.
+          - Solved technical problems and worked with PHP, Next.js, HTML, CSS, and JavaScript.
+
+      - company: Third-Year Engineering Organization
+        position: Half-Time President
+        location: Leuven, Belgium
+        start_date: 2022
+        end_date: 2023
+        highlights:
+          - Organized activities for third-year engineering students.
+
+      - company: First and Second Year Engineers and Architects Organization
+        position: Kanweek President
+        location: Leuven, Belgium
+        start_date: 2021
+        end_date: 2022
+        highlights:
+          - Led organization and execution of activities for first- and second-year students.
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Technical Skills
+        keywords: "Signal processing, Medical image analysis, Deep learning, Python, PHP, Next.js, HTML, CSS, JavaScript"
