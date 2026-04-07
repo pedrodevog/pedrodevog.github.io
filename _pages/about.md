@@ -32,9 +32,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I work at the intersection of mathematical signal processing and machine learning. My main interest is building theoretically grounded AI methods, with a particular focus on deep and structured state space modeling. Read about my current PhD project on the [KU Leuven research portal](https://research.kuleuven.be/portal/en/project/3E250767)!
+I work at the intersection of mathematical signal processing and machine learning, supervised by [Alexander Bertrand](https://homes.esat.kuleuven.be/~abertran/) and [Reto A. Wildhaber](https://people.ee.ethz.ch/~retow/cv-reto-a-wildhaber.html). My main interest is building theoretically grounded AI methods, with a particular focus on deep autonomous linear state space models (ALSSMs). Read about my current PhD project on the [KU Leuven research portal](https://research.kuleuven.be/portal/en/project/3E250767)!
 
-My academic path includes a Bachelor in Engineering Science (magna cum laude, 78.69%) and a Master in Biomedical Engineering (summa cum laude, 86.14%) at KU Leuven, where I ranked first in my cohort.
+My academic path includes a Bachelor in Engineering Science and a Master in Biomedical Engineering at KU Leuven, where I ranked first in my cohort.
 
 During my studies, I completed an exchange semester at ETH Zurich and contributed to many projects, which you can find on my [Projects](/projects/) page.
 
