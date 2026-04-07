@@ -461,8 +461,8 @@ ninja.data = [{
           description: "A systematic evaluation framework for generative deep learning on synthetic ECG signals.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/master-thesis-ecg/";
-            },},{id: "projects-lesioned-brain-mri-parcellation",
-          title: 'Lesioned Brain MRI Parcellation',
+            },},{id: "projects-atlas-automated-tissue-and-lesions-analysis-system",
+          title: 'ATLAS: Automated Tissue and Lesions Analysis System',
           description: "Research internship on automated segmentation pipelines for lesioned brain MRI.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/mirc-brain-mri-parcellation/";
