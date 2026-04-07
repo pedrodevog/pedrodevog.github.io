@@ -10,7 +10,7 @@ horizontal: false
 
 <!-- pages/projects.md -->
 <div class="projects">
-{% assign my_projects = site.projects | where_exp: "item", "item.slug == 'master-thesis-ecg' or item.slug == 'mirc-brain-mri-parcellation'" %}
+{% assign my_projects = site.projects | where_exp: "item", "item.slug == 'master-thesis-ecg' or item.slug == 'mirc-brain-mri-parcellation' or item.slug == 'burgieclan'" %}
 {% assign sorted_projects = my_projects | sort: "importance" %}
 
 {% if page.horizontal %}
