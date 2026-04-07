@@ -456,6 +456,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-burgieclan",
+          title: 'Burgieclan',
+          description: "A platform for students to share study materials and collaborate on exam preparation.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/burgieclan/";
             },},{id: "projects-synthecg-synthetic-12-lead-ecg-generation",
           title: 'SynthECG: Synthetic 12-Lead ECG Generation',
           description: "A systematic evaluation framework for generative deep learning on synthetic ECG signals.",
