@@ -27,7 +27,7 @@ cv:
         end_date: 2023
         highlights:
           - "Result: magna cum laude (78.69%)."
-          - Honours Program project on deep-learning-based classification and prediction of breathing patterns (Prof. dr. ir. Sofie Pollin).
+          - "Honours Program project on deep-learning-based classification and prediction of breathing patterns ([Prof. dr. ir. Sofie Pollin](https://www.kuleuven.be/wieiswie/en/person/00041938))."
 
       - institution: Sint-Albertuscollege Haasrode
         location: Heverlee, Belgium
@@ -45,8 +45,8 @@ cv:
         url: https://research.kuleuven.be/portal/en/project/3E250767
         summary: Efficient Deep Learning using Autonomous Linear State Space Models.
         highlights:
-          - "Promotor: Prof. dr. ir. Alexander Bertrand (STADIUS, KU Leuven)."
-          - "Copromotor: Reto Wildhaber (FHNW University of Applied Sciences and Arts Northwestern Switzerland)."
+          - "Promotor: [Prof. dr. ir. Alexander Bertrand](https://homes.esat.kuleuven.be/~abertran/) (STADIUS, KU Leuven)."
+          - "Copromotor: [Reto A. Wildhaber](https://people.ee.ethz.ch/~retow/cv-reto-a-wildhaber.html) (FHNW University of Applied Sciences and Arts Northwestern Switzerland)."
           - Focuses on improving deep learning efficiency for high-dimensional or high-throughput data by using autonomous linear state space models and efficient recursive updates for resource-constrained and real-time applications.
 
       - company: KU Leuven - MIRC
@@ -54,7 +54,7 @@ cv:
         location: Leuven, Belgium
         start_date: 2024-06
         end_date: 2024-09
-        summary: Mentored by Prof. dr. ir. Frederik Maes and dr. Ahmed Radwan.
+        summary: Mentored by [Prof. dr. ir. Frederik Maes](https://www.kuleuven.be/wieiswie/nl/person/00007203) and dr. Ahmed Radwan.
         highlights:
           - "Project: [ATLAS: Automated Tissue and Lesions Analysis System](/projects/mirc-brain-mri-parcellation/)."
           - Developed a state-of-the-art image parcellation tool for multimodal lesioned brain MR images.
@@ -65,7 +65,7 @@ cv:
         location: Leuven, Belgium
         start_date: 2023-06
         end_date: 2023-09
-        summary: Mentored by Prof. dr. ir. Frederik Maes and Prof. dr. Vincent Vandecaveye.
+        summary: Mentored by [Prof. dr. ir. Frederik Maes](https://www.kuleuven.be/wieiswie/nl/person/00007203) and [Prof. dr. Vincent Vandecaveye](https://www.kuleuven.be/wieiswie/nl/person/00043777).
         highlights:
           - Developed a state-of-the-art image segmentation tool on DW-MR images.
           - Integrated the solution in the MIM system at UZ Leuven.
@@ -75,7 +75,7 @@ cv:
         location: Leuven, Belgium
         start_date: 2022
         end_date: 2024
-        summary: Mentored by Prof. dr. ir. Sofie Pollin.
+        summary: Mentored by [Prof. dr. ir. Sofie Pollin](https://www.kuleuven.be/wieiswie/en/person/00041938).
         highlights:
           - Taught exercise sessions.
           - Updated slides and course layout.
