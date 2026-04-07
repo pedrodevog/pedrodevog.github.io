@@ -75,10 +75,12 @@ layout: default
     {% if page.selected_projects %}
       {% capture selected_projects_content %}{% include selected_projects.liquid %}{% endcapture %}
       {% if selected_projects_content | strip != '' %}
-        <h2>
-          <a href="{{ '/projects/' | relative_url }}" style="color: inherit">Selected projects</a>
-        </h2>
-        {{ selected_projects_content }}
+        <div class="selected-projects-section">
+          <h2 class="selected-projects-heading">
+            <a class="selected-projects-link" href="{{ '/projects/' | relative_url }}">Selected projects</a>
+          </h2>
+          {{ selected_projects_content }}
+        </div>
       {% endif %}
     {% endif %}
 

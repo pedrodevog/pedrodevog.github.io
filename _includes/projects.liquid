@@ -1,4 +1,4 @@
-<div class="col-12 col-md-6">
+<div class="col-12 col-md-6 mb-4">
   {% assign project_heading = project.title %}
   {% assign project_label = project.label | default: '' %}
   {% assign project_github_url = project.github | default: '' %}
@@ -26,7 +26,7 @@
           {% if project_github_url != '' %}
             <span class="github-icon" data-toggle="tooltip" title="Code Repository">
               <a href="{{ project_github_url }}" aria-label="GitHub repository">
-                 <i class="fa-brands fa-github gh-icon" style="color: var(--global-text-color); line-height: 1"></i>
+                  <i class="fa-brands fa-github gh-icon"></i>
               </a>
             </span>
           {% endif %}

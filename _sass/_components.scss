@@ -161,6 +161,28 @@ ul.task-list input[type="checkbox"] {
   transform: translateX(-15px) translateY(-5px);
 }
 
+// About page section headers
+
+.selected-projects-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
+.selected-projects-section {
+  margin-bottom: 1.25rem;
+}
+
+.selected-projects-heading {
+  margin-bottom: 1.25rem;
+}
+
 // Projects
 
 .projects {
@@ -225,7 +247,7 @@ ul.task-list input[type="checkbox"] {
       }
       --project-github-icon-size: 1.35rem;
 
-      .gh-icon {
+      a i {
         display: inline-block;
         color: var(--global-text-color) !important;
         line-height: 1;
@@ -234,6 +256,7 @@ ul.task-list input[type="checkbox"] {
 
       a:hover .gh-icon,
       a:hover .gh-icon::before,
+      a:hover i,
       .github-icon:hover .gh-icon,
       .github-icon:hover .gh-icon::before {
         color: var(--global-theme-color) !important;
