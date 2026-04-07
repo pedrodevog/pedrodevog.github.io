@@ -17,6 +17,7 @@ cv:
         highlights:
           - "Result: summa cum laude (86.14%)."
           - "Exchange semester at ETH Zurich, result: summa cum laude (95%)."
+          - "Master thesis: [A Systematic Evaluation Framework of Generative Deep Learning for 10-second 12-lead Synthetic ECG Signals](/projects/master-thesis-ecg/)."
 
       - institution: KU Leuven
         location: Leuven, Belgium
@@ -55,6 +56,7 @@ cv:
         end_date: 2024-09
         summary: Mentored by Prof. dr. ir. Frederik Maes and dr. Ahmed Radwan.
         highlights:
+          - "Project: [ATLAS: Automated Tissue and Lesions Analysis System](/projects/mirc-brain-mri-parcellation/)."
           - Developed a state-of-the-art image parcellation tool for multimodal lesioned brain MR images.
           - Work contributed to an upcoming paper.
 
