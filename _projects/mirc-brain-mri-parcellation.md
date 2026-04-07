@@ -1,7 +1,7 @@
 ---
 layout: page
 label: Research Internship
-title: Lesioned Brain MRI Parcellation
+title: "ATLAS: Automated Tissue and Lesions Analysis System"
 description: Research internship on automated segmentation pipelines for lesioned brain MRI.
 importance: 2
 category: research
