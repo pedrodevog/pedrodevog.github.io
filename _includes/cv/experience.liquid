@@ -7,6 +7,11 @@
 
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% for entry in entries %}
+    {% assign is_condensed_teaching = false %}
+    {% if include.condense_teaching and entry.category == 'teaching' %}
+      {% assign is_condensed_teaching = true %}
+    {% endif %}
+
     <li class="list-group-item">
       <div class="row">
         <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
@@ -40,16 +45,18 @@
               {% capture location %}
                 {% if entry.location %}{{ entry.location }}{% endif %}
               {% endcapture %}
-              {% if location != '' %}
-                <tr>
-                  <td>
-                    <p class="location">
-                      <i class="fa-solid fa-location-dot iconlocation"></i>
-                      {{ location }}
-                    </p>
-                  </td>
-                </tr>
-              {% endif %}
+              {% unless include.hide_location or is_condensed_teaching %}
+                {% if location != '' %}
+                  <tr>
+                    <td>
+                      <p class="location">
+                        <i class="fa-solid fa-location-dot iconlocation"></i>
+                        {{ location }}
+                      </p>
+                    </td>
+                  </tr>
+                {% endif %}
+              {% endunless %}
             </tbody>
           </table>
         </div>
@@ -57,8 +64,30 @@
           {% capture position_title %}
             {% if entry.position %}{{ entry.position }}{% endif %}
           {% endcapture %}
+          {% assign position_title = position_title | strip %}
 
-          {% if entry.url %}
+          {% capture company_name %}
+            {% if entry.name %}{{ entry.name }}{% elsif entry.company %}{{ entry.company }}{% elsif entry.organization %}{{ entry.organization }}{% endif %}
+          {% endcapture %}
+          {% assign company_name = company_name | strip %}
+
+          {% if is_condensed_teaching %}
+            {% assign course_name = position_title %}
+            {% assign position_only = position_title %}
+            {% if position_title contains ', ' %}
+              {% assign course_name = position_title | split: ', ' | last %}
+              {% assign position_only = position_title | split: ', ' | first %}
+            {% else %}
+              {% assign course_name = '' %}
+            {% endif %}
+            {% assign position_title = position_only %}
+
+            {% if entry.company %}
+              {% assign company_name = entry.company | split: '-' | first | strip %}
+            {% endif %}
+          {% endif %}
+
+          {% if entry.url and is_condensed_teaching == false %}
             <h6 class="title font-weight-bold ml-1 ml-md-4">
               <a href="{{ entry.url }}">{{ position_title }}</a>
             </h6>
@@ -66,28 +95,41 @@
             <h6 class="title font-weight-bold ml-1 ml-md-4">{{ position_title }}</h6>
           {% endif %}
 
-          {% capture company_name %}
-            {% if entry.name %}{{ entry.name }}{% elsif entry.company %}{{ entry.company }}{% elsif entry.organization %}{{ entry.organization }}{% endif %}
-          {% endcapture %}
           {% if company_name != '' %}
             <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ company_name }}</h6>
           {% endif %}
 
-          {% if entry.summary %}
-            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
-              {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
-            </h6>
+          {% if is_condensed_teaching and course_name != '' %}
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ course_name }}</h6>
           {% endif %}
 
-          {% if entry.highlights %}
-            <ul class="items">
-              {% for item in entry.highlights %}
-                <li>
-                  <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
-                </li>
-              {% endfor %}
-            </ul>
+          {% if is_condensed_teaching and position_only != 'Teaching Assistant' %}
+            {% if entry.highlights %}
+              <p class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
+                {% for item in entry.highlights %}
+                  {{ item | markdownify | remove: '<p>' | remove: '</p>' | remove_first: 'Tutored university students in ' }}{% unless forloop.last %}; {% endunless %}
+                {% endfor %}
+              </p>
+            {% endif %}
           {% endif %}
+
+          {% unless is_condensed_teaching %}
+            {% if entry.summary %}
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
+                {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+              </h6>
+            {% endif %}
+
+            {% if entry.highlights %}
+              <ul class="items">
+                {% for item in entry.highlights %}
+                  <li>
+                    <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          {% endunless %}
         </div>
       </div>
     </li>

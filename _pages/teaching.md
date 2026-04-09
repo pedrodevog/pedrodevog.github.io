@@ -8,21 +8,32 @@ nav_order: 4
 calendar: false
 ---
 
-## Teaching
+{% assign cv_sections = site.data.cv.cv.sections %}
+{% assign teaching_entries = cv_sections.Experience | where: 'category', 'teaching' %}
+{% assign recognition_entries = cv_sections.Awards | where: 'category', 'teaching' %}
 
-- Teaching assistant for Information Transfer and Processing (KU Leuven).
-- Gave exercise sessions to approximately 350 second-year bachelor students.
-- Contributed to course slide redesign and updates across multiple academic years (2022-2025).
+<div class="cv">
+  <div class="card mt-3 p-3">
+    <h3 class="card-title font-weight-medium">Teaching Experience</h3>
+    <div>
+      {% if teaching_entries and teaching_entries.size > 0 %}
+        {% assign entries = teaching_entries %}
+        {% include cv/experience.liquid hide_location=true %}
+      {% else %}
+        <p>No teaching experience entries configured in <code>_data/cv.yml</code>.</p>
+      {% endif %}
+    </div>
+  </div>
 
-## Educational Service
-
-- Member, Permanent Education Committee at KU Leuven (2022-2025).
-- President, Kanweek (welcome organization for first- and second-year engineering students).
-- President, HalfTime (social organization for third-year engineering students).
-- IT team member, VTK engineering student association (2022-2024).
-- Founder and lead, Biomedix (2024-2025), a student organization connecting biomedical engineering students.
-- Member, NCBME youngster committee, supporting annual conference organization.
-
-## Recognition
-
-- Golden Chalk Award (best teaching assistant, student-voted).
+  <div class="card mt-3 p-3">
+    <h3 class="card-title font-weight-medium">Recognition</h3>
+    <div>
+      {% if recognition_entries and recognition_entries.size > 0 %}
+        {% assign entries = recognition_entries %}
+        {% include cv/awards.liquid %}
+      {% else %}
+        <p>No recognition entries configured in <code>_data/cv.yml</code>.</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
