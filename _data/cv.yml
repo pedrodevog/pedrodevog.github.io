@@ -49,6 +49,15 @@ cv:
           - "Copromotor: [Reto A. Wildhaber](https://people.ee.ethz.ch/~retow/cv-reto-a-wildhaber.html) (FHNW University of Applied Sciences and Arts Northwestern Switzerland)."
           - Focuses on improving deep learning efficiency for high-dimensional or high-throughput data by using autonomous linear state space models and efficient recursive updates for resource-constrained and real-time applications.
 
+      - company: KU Leuven - ESAT
+        position: Teaching Assistant, Digital Signal Processing
+        category: teaching
+        location: Leuven, Belgium
+        start_date: 2025
+        end_date:
+        highlights:
+          - Delivered exercise sessions to ~150 second-year bachelor students.
+
       - company: KU Leuven - MIRC
         position: Student Researcher
         location: Leuven, Belgium
@@ -58,7 +67,7 @@ cv:
         highlights:
           - "Project: [ATLAS: Automated Tissue and Lesions Analysis System](/projects/mirc-brain-mri-parcellation/)."
           - Developed a state-of-the-art image parcellation tool for multimodal lesioned brain MR images.
-          - Work contributed to an upcoming paper.
+          - Work contributed to an upcoming **paper submission**.
 
       - company: KU Leuven - MIRC
         position: Student Researcher
@@ -72,22 +81,24 @@ cv:
 
       - company: KU Leuven - ESAT
         position: Teaching Assistant, Information Processing and Transmission
+        category: teaching
         location: Leuven, Belgium
         start_date: 2022
-        end_date: 2024
+        end_date: 2025
         summary: Mentored by [Prof. dr. ir. Sofie Pollin](https://www.kuleuven.be/wieiswie/en/person/00041938).
         highlights:
-          - Taught exercise sessions.
-          - Updated slides and course layout.
-          - Wrote and adapted course materials to student level.
+          - Delivered weekly exercise sessions to ~350 second-year bachelor students (2022-2023).
+          - Updated course slides and wrote new course material over three academic years.
+          - Awarded the **Golden Chalk Award** for best teaching assistant, as voted by students (2023).
 
       - company: Slaagsleutels
         position: Tutor
+        category: teaching
         location: Leuven, Belgium
         start_date: 2021
         end_date: 2022
         highlights:
-          - Tutored students in courses such as Analysis.
+          - Tutored university students in Calculus, Physics, and Programming courses.
 
     Awards:
       - title: 1st Place (Technical), Engineering Case Competition
@@ -100,14 +111,29 @@ cv:
         awarder: Hertie School Berlin
         summary: AI-driven tool to help the International Organization for Migration quickly gather and summarize multilingual news.
 
+      - title: Golden Chalk Award
+        category: teaching
+        date: 2023
+        awarder: KU Leuven
+        summary: Best teaching assistant award, voted by students.
+
       - title: Laureate P&O3 - Sunhouse
         date: 2022
         awarder: Alumni Association, Engineering Sciences
         summary: Developed an algorithm minimizing energy consumption in a green-energy-driven household.
 
     Leadership and Activities:
+      - company: NCBME
+        position: Youngster Committee Member
+        category: educational_service
+        location: Belgium
+        start_date: 2025
+        highlights:
+          - Supported the organization of annual conference activities.
+
       - company: Biomedix - VTK Leuven
         position: Founder
+        category: educational_service
         location: Leuven, Belgium
         start_date: 2024
         end_date: 2025
@@ -117,6 +143,7 @@ cv:
 
       - company: VTK Leuven
         position: Team Member IT
+        category: educational_service
         location: Leuven, Belgium
         start_date: 2022
         end_date: 2024
@@ -124,8 +151,16 @@ cv:
           - Managed and maintained digital services including wiki, online ticketing, and stock systems.
           - Solved technical problems and worked with PHP, Next.js, HTML, CSS, and JavaScript.
 
+      - company: KU Leuven
+        position: Member, Permanent Education Committee
+        category: educational_service
+        location: Leuven, Belgium
+        start_date: 2022
+        end_date: 2025
+
       - company: Third-Year Engineering Organization
         position: Half-Time President
+        category: educational_service
         location: Leuven, Belgium
         start_date: 2022
         end_date: 2023
@@ -134,6 +169,7 @@ cv:
 
       - company: First and Second Year Engineers and Architects Organization
         position: Kanweek President
+        category: educational_service
         location: Leuven, Belgium
         start_date: 2021
         end_date: 2022
