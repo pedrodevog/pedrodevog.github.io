@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Gave a seminar on *[Efficient long-sequence learning with deep State Space Models](https://set.kuleuven.be/phd/seminars/devogelaere-1)* at KU Leuven's ESAT department, covering HiPPO and S4 architectures for long-range biomedical signal processing.
+Gave a seminar on *[Efficient long-sequence learning with deep State Space Models](https://www.youtube.com/watch?v=lBYM3TsxWb0)* at KU Leuven's ESAT department, covering HiPPO and S4 architectures for long-range biomedical signal processing.
