@@ -24,7 +24,7 @@ I contributed to the implementation and evaluation of segmentation pipelines for
 
 ## Outcome
 
-The work supported ongoing research outputs, including manuscript preparation with collaborators.
+The work supports ongoing research outputs, including manuscript preparation with collaborators. It was accepted for an **oral presentation** at the [ESMRMB 2026 Congress](https://esmrmbcongress.org/) in Girona, Spain (30 Sept–3 Oct 2026).
 
 ## Focus Areas
 
